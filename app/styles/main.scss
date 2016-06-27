@@ -1,0 +1,169 @@
+.map {
+    flex: 3 3 60%;
+    // vertical-align: top;
+    height: 80%;
+}
+
+.question-list {
+    overflow: auto;
+}
+
+textarea.question-content-input {
+    height: 250px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.question-list-detail {
+    flex: 1 1 40%;
+    height: 80%;
+    
+    .question-list {
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        flex: 1 1 30%;
+    }
+    
+    .question-detail {
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        flex: 1 1 70%;
+    }
+}
+
+.question-detail {
+    overflow: auto;
+    border: solid 1px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    div:not(:last-child):not(:first-child) {
+        border-bottom: solid 1px darkgray;
+        padding: 10px 5px 0 5px;
+    }
+    .question-content {
+        background-color: lightblue;
+    }
+    .answer-section {
+        background-color: lightgreen;
+        & > ul {
+            padding-left: 0;
+        }
+        
+        & > .your-answer {
+            margin-top: auto;
+            & > form > button {
+                margin-top: 10px;
+            }
+        }
+    }
+    
+}
+
+.question-item-selected {
+    border: solid 4px darkblue;
+}
+
+.question-item-hovered {
+    border: solid 2px lightblue;
+}
+
+.top-right-close-button {
+    border: none;
+    text-align: right;
+    & > button {
+        height: 20px;
+        padding: 0;
+    }
+}
+
+.answer-item {
+    border-bottom: solid 1px black;
+    margin-bottom: 10px;
+    background-color: lightgray;
+    .answer-item-content {
+        border-bottom: dotted 1px lavender;
+    }
+
+    .answer-item-metadata {
+        font-size: 0.8em;
+        text-align: right;
+    }
+}
+
+.tag-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.tag-container {
+    display: flex;
+    flex-direction: row;
+    border: solid 1px darkgray;
+    border-radius: 5px;
+}
+
+.tag-item {
+    border-radius: 5px;
+    margin: 5px 0 5px 10px;
+    padding: 2px 1px 2px 1px;
+    background-color: lightblue;
+    & > .glyphicon {
+        font-size: 0.8em;
+    }
+    & > a {
+        text-decoration: none;
+    }
+}
+
+.tag-input {
+    flex-grow: 1;
+    margin-left: 5px;
+    border: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+.suggestion-box-container {
+    position: absolute;
+    width: 70%;
+    background-color: white;
+    border: solid 1px darkgray;
+    ul {
+        list-style-type: none;
+    }
+}
+
+.glyphicon-spin {
+  -webkit-animation: spin 1000ms infinite linear;
+  animation: spin 1000ms infinite linear;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+

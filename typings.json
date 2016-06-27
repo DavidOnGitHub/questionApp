@@ -1,0 +1,18 @@
+{
+  "ambientDependencies": {
+    "classnames": "registry:dt/classnames#0.0.0+20160316155526",
+    "isomorphic-fetch": "registry:dt/isomorphic-fetch#0.0.0+20160316155526",
+    "jquery": "registry:dt/jquery#1.10.0+20160417213236",
+    "react": "registry:dt/react#0.14.0+20160412154040",
+    "react-bootstrap": "registry:dt/react-bootstrap#0.0.0+20160423135514",
+    "react-dom": "registry:dt/react-dom#0.14.0+20160412154040",
+    "react-redux": "registry:dt/react-redux#4.4.0+20160406115600",
+    "redux": "registry:dt/redux#3.3.1+20160326112656",
+    "redux-form": "registry:dt/redux-form#4.0.3+20160614092506",
+    "redux-thunk": "registry:dt/redux-thunk#2.0.1+20160317120654",
+    "toastr": "registry:dt/toastr#2.1.1+20160510010435"
+  },
+  "dependencies": {
+    "react-router": "registry:npm/react-router#2.0.0+20160214194820"
+  }
+}
